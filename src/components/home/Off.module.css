@@ -1,0 +1,11 @@
+.container{
+    /* position: absolute;
+    top: 100px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #E9EEF2;
+min-height: 100vh;
+margin-top: 100px;
+    
+    }

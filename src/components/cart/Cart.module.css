@@ -1,0 +1,148 @@
+.container{
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color:#78A6C8;
+    min-height: 100vh;
+    display: flex;
+    width: 90%;
+    flex-direction:row-reverse;
+    border-radius: 10px;
+}
+.itemcontainer{
+    margin-top: 30px;
+    margin-right: 240px;
+    /* position: absolute; */
+    /* z-index: 3; */
+    width: 80%;
+    /* right: 231px;
+    top: 47px;
+     */
+}
+.checkout{
+    margin: 20px;
+    margin-top: 65px;
+    width: 300px;
+    /* border-radius: 10px; */
+    min-height: 50vh;
+    /* background-color:rgba(248, 248, 248, 0.911); */
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    background: #d6a29d;
+    backdrop-filter: blur(5px);
+    position:absolute;
+    z-index: 2;
+}
+.checkout h1{
+    margin: 10px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+.checkout h3{
+    font-size: 18px;
+    margin-left: 20px;
+}
+.header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin: 20px 10px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: 2;
+}
+.header span{
+    font-size: 24px;
+   margin-left: 135px;
+   
+}
+.discount{
+    padding: 0 10px;
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+.discount h3{
+    font-size: 18px;
+margin-bottom: 20px;
+}
+.container input {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(28, 147, 202);
+    height: 30px;
+}
+
+.container button{
+    margin: 10px auto;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+@media screen and (max-width: 600px) {
+
+.header span{
+    font-size: 18px;
+    margin: 0 25px;
+
+}
+.container{
+    flex-direction: column-reverse;
+}
+.checkout{
+    
+    position: relative;
+    margin: 5px auto;
+}
+.checkout h1{
+    font-size: 18px;
+    margin: 10px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+.checkout h3{
+    font-size: 15px;
+    margin-left: 20px;
+}
+.header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin: 20px 10px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: 2;
+}
+
+.discount{
+    padding: 0 5px;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+.discount h3{
+    font-size: 15px;
+margin-bottom: 10px;
+}
+}

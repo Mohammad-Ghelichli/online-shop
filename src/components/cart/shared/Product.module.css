@@ -1,0 +1,151 @@
+.container {
+  position: relative;
+  margin: 20px auto;
+  place-items: center;
+  width: 290px;
+  /* height: 250px; */
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+  max-height: 350px;
+}
+.discount span {
+  position: absolute;
+  top: 38px;
+  left: 21px;
+  font-weight: bold;
+  color: red;
+  font-size: 27px;
+  background-color: #E9EEF2;
+  transform: rotate(-45deg);
+}
+.discount img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  
+}
+.image{
+  margin-top: 20px;
+  width: 120px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.container button {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 167, 62, 1) 0%,
+    rgba(102, 247, 113, 1) 100%
+  );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.container button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.container button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+.buttonContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+}
+.buttonContainer span {
+  font-size: 28px;
+  position: absolute;
+  top: 14px;
+}
+.buttonContainer img {
+  width: 40px;
+  height: 40px;
+  margin: 10px 20px;
+}
+.add{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+    font-size: 11px;
+    width: 190px;
+    margin: 5px auto;
+    
+  }
+  .image{
+    margin-top: 20px;
+    width: 120px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+
+.buttonContainer span {
+  font-size: 20px;
+  position: absolute;
+  top: 14px;
+}
+.buttonContainer img {
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px;
+}
+.container button{
+  font-size: 0px;
+  border-radius: 50%;
+
+}
+.add{
+  display: inline;
+}
+.discount span {
+  position: absolute;
+  top: 19px;
+  left: 4px;
+  font-weight: bold;
+  border-radius: 2px;
+  color: red;
+  font-size: 17px;
+  background-color: #b8b6b6;
+  transform: rotate(-45deg);
+}
+.discount img {
+  position: absolute;
+  top: -12px;
+  left: -2px;
+  width: 50px;
+  height: 80px;
+  
+}
+}

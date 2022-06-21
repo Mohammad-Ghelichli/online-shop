@@ -1,0 +1,102 @@
+.container {
+  margin-top: 15px;
+  /* color: aliceblue; */
+  display: flex;
+  /* height: 300px; */
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 10px 10px;
+  place-items: center;
+  min-width: 300px;
+  height: 200px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  position: relative;
+}
+.card img{
+  width: 300px;
+}
+.title {
+    perspective: 1000px;
+    perspective-origin: 50% 50% ;
+    transform-style: preserve-3d;
+  text-align: center;
+  margin: 10px auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  z-index: 2;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 100%;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  opacity: 0.6;
+  transition: 0.8s;
+}
+.title h3{
+    color: white;
+    font-size: 22px;
+    margin-top: 65px;
+    margin-left: 40px;
+}
+.title button :visited ,.title button:active{
+  color: rgb(248, 248, 250);
+
+}
+.title button:hover{
+transform:rotateX(360deg)
+}
+.title button {
+    transition: 2S;
+  font-size: 20px;
+  outline: none;
+  color: rgb(248, 248, 250);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 100%;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+.card:hover > .title {
+  top: 10%;
+}
+@media screen and (max-width: 600px) {
+ .card {
+  margin: 5px auto;
+  place-items: center;
+  min-width: 200px;
+  height: 150px;
+}
+.card img{
+  width: 200px;
+}
+.title h3{
+  color: white;
+  font-size: 20px;
+  margin-top: 45px;
+  margin-left: 40px;
+}.title button {
+  transition: 2S;
+font-size: 20px;
+margin-top: 10px;
+
+}
+}

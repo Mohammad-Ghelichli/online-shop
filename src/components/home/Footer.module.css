@@ -1,0 +1,96 @@
+.container {
+  position: relative;
+  margin-top: 0px;
+  background-color: #326789;
+  width: 100%;
+  /* height: 250px; */
+  display: flex;
+  padding: 30px 0px;
+  justify-content: space-evenly;
+
+  flex-direction: row;
+}
+.contact p {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.contact p img {
+  margin-top: 30px;
+  width: 40px;
+}
+.contact p img:hover {
+  transform: scale(1.4, 1.4);
+  cursor: pointer;
+}
+.logo img {
+  position: absolute;
+  width: 500px;
+  top: 10px;
+  left: -50px;
+  transition: 1s;
+}
+.logo img:hover {
+  transform: scale(1.2, 1.2);
+}
+.logo h3 {
+  position: absolute;
+  top: 193px;
+  left: 111px;
+  font-family: monospace;
+}
+.contact {
+  font-family: monospace;
+  margin-left: 90px;
+  display: flex;
+  flex-direction: column;
+}
+.news {
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column-reverse;
+    padding: 20px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .logo img {
+    width: 50%;
+    top: 67%;
+    left: 46%;
+  }
+  .logo h3 {
+    top: 90%;
+    left: 19%;
+  }
+}
+.contact {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.news {
+  margin-left: 20px;
+  display: none;
+}
+.contact p {
+  /* position: absolute;
+        top: 10px;
+        left: 85%; */
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.contact p img {
+  margin: 10px 10px;
+  width: 30px;
+}
+.contact a {
+  width: 40px;
+}

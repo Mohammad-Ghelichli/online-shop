@@ -1,0 +1,16 @@
+.container{
+    background-color: #E9EEF2;
+    margin-top: 80px;
+    /* top: 100px; */
+    /* position: absolute; */
+    width: 100%;
+
+}
+.search{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .search{
+        display: inline-block;
+    }
+}
